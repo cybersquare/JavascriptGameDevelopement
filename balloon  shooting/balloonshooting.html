@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Balloon Shooter</title>
+
   </head>
   <style>
     body {
@@ -75,12 +76,32 @@
       font-size: 3em;
       color:black;
       }
+      img
+      {
+        margin-left: 1250px;
+        margin-bottom: 1px;
+      }
+      #logout{
+           
+            background-color: green;
+            padding:10px;
+            font-size: 15px;
+            border:0px;
+            color:white;
+        }
   </style>
   <script src="game.js" defer></script>
+  <script>
+    function logout(){
+        localStorage.setItem('loggedUser', '')
+        window.location.href = 'index.html';
+
+    }
+</script>
   <body>
-    <img src="Cybersquarelogo.png" width="200px"  style="margin-left: 1250px; margin-top: 1px;" >
-   <center><h1 style="color:a" >Balloon shooting game
-    </h1></center>
+    <input type="button" value="Logout" onclick="logout()" id="logout" style="margin-left: 1450px; margin-top:1px">
+    
+   <center><h1 style="color:a" >Balloon shooting game</h1></center>
     <div id="board">
      
       <div class="rocks"></div>
@@ -89,6 +110,6 @@
     </div>
     <div class="score">Your Score</div>
     <div id="points">0 </div>
-   
+    <img src="Cybersquarelogo.png" width="200px"  >
   </body>
 </html>

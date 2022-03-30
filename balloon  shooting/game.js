@@ -26,7 +26,7 @@ window.addEventListener("keydown", (e) => {
           var rockbound = rock.getBoundingClientRect();
           var bulletbound = bullet.getBoundingClientRect();
 
-          //Condition to check whether the rock/alien and the bullet are at the same position..!
+          //Condition to check whether the rock/balloon and the bullet are at the same position..!
           //If so,then we have to destroy that rock
 
           if (

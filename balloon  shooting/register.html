@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Balloon Shooter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+
+    <script src="db.js"></script>
+</head>
+<body>
+<!-- Page Header -->
+<div class="header">
+    <a href="index.html"><img src="images/home.png" alt="" style="float: left;" width="80"></a>
+   <center> <img src="Cybersquarelogo.png" alt="" > </center>
+</div>
+<!-- login div -->
+<div class="login">
+<!-- Form header -->
+  <h1 id="header">Register to play game</h1>
+<!-- Registration form -->
+  <form id="form">
+    
+    <input type="text" placeholder="Email/ Username" class="frm_ctrl" id="txt_username"><br>
+    <input type="password"   placeholder="Password" class="frm_ctrl" id="txt_password"><br>
+    <input type="text" placeholder="Full name"  class="frm_ctrl" id="txt_name"><br>
+    Gender: <input type="radio" name="gender"  id="radio_male" > Male
+    <input type="radio" name="gender" id="radio_female"> Female<br><br>
+    <input type="button" onclick="register()" value="Sign me up!">
+  </form>
+</div>
+
+</body>
+</html>
